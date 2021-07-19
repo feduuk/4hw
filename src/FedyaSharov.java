@@ -17,11 +17,11 @@ public class FedyaSharov {
         };
 
 
-        MatrixImpl m1 = new MatrixImpl(matrix1);
+        Matrix m1 = new MatrixImpl(matrix1);
         System.out.println("First matrix:");
         System.out.println(m1);
 
-        MatrixImpl m2 = new MatrixImpl(matrix2);
+        Matrix m2 = new MatrixImpl(matrix2);
         System.out.println("Second matrix:");
         System.out.println(m2);
 

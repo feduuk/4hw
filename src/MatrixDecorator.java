@@ -1,7 +1,7 @@
 public abstract class MatrixDecorator implements Matrix{
-    MatrixImpl m;
+    Matrix m;
 
-    public MatrixDecorator(MatrixImpl m) {
+    public MatrixDecorator(Matrix m) {
 
         this.m = m;
     }
@@ -9,6 +9,15 @@ public abstract class MatrixDecorator implements Matrix{
     @Override
     public int getElement(int i, int j) throws ArrayIndexOutOfBoundsException {
         return m.getElement(i, j);
+    }
+
+    @Override
+    public int length(){
+        return m.length();
+    }
+    @Override
+    public int length(int i){
+        return m.length(i);
     }
 
     @Override

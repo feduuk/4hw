@@ -1,6 +1,6 @@
 public class SumOfTwoMatrices extends MatrixDecorator {
-    MatrixImpl m2;
-    public SumOfTwoMatrices(MatrixImpl m1, MatrixImpl m2) throws ArrayIndexOutOfBoundsException {
+    Matrix m2;
+    public SumOfTwoMatrices(Matrix m1, Matrix m2) throws ArrayIndexOutOfBoundsException {
         super(m1);
         this.m2 = m2;
     }

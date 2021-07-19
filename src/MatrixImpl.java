@@ -10,9 +10,11 @@ public class MatrixImpl implements Matrix{
     public int getElement (int i, int j) throws ArrayIndexOutOfBoundsException {
         return matrix[i][j];
     }
+    @Override
     public int length(){
         return matrix.length;
     }
+    @Override
     public int length(int i){
         return matrix[i].length;
     }
