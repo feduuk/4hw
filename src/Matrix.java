@@ -1,3 +1,3 @@
 public interface Matrix {
-    int getElement(int i, int j) throws ArrayIndexOutOfBoundsException, NullPointerException;
+    int getElement(int i, int j) throws ArrayIndexOutOfBoundsException;
 }

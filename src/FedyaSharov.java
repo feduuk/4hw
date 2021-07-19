@@ -25,43 +25,21 @@ public class FedyaSharov {
         System.out.println("Second matrix:");
         System.out.println(m2);
 
-        Matrix tm = null;
-        try {
-            tm = new TransposedMatrix(m1);
-            System.out.println("Transposed matrix:");
-            System.out.println(tm);
-        } catch (ArrayIndexOutOfBoundsException  e) {
-            e.printStackTrace();
-        } catch (NullPointerException  e) {
-            e.printStackTrace();
-        }
+        Matrix tm = new TransposedMatrix(m1);
+        System.out.println("Transposed matrix:");
+        System.out.println(tm);
 
 
-        Matrix sotm = null;
-        try {
-            sotm = new SumOfTwoMatrices(m1,  m2);
-            System.out.println("Sum of two matrices:");
-            System.out.println(sotm);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            e.printStackTrace();
-        } catch (NullPointerException  e) {
-            e.printStackTrace();
-        }
+        Matrix sotm = new SumOfTwoMatrices(m1,  m2);
+        System.out.println("Sum of two matrices:");
+        System.out.println(sotm);
 
 
-        try {
-            System.out.println("Elements:");
-            System.out.println(m1.getElement(1,2));
-            System.out.println(m2.getElement(1,2));
-            System.out.println(tm.getElement(1,2));
-            System.out.println(sotm.getElement(1,2));
-        } catch (ArrayIndexOutOfBoundsException e) {
-            e.printStackTrace();
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-        }
-
+        System.out.println("Elements:");
+        System.out.println(m1.getElement(1,2));
+        System.out.println(m2.getElement(1,2));
+        System.out.println(tm.getElement(1,2));
+        System.out.println(sotm.getElement(1,2));
 
     }
-
 }
